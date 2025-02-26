@@ -22,7 +22,7 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Academic Project Page</title>
+  <title>CushionCatch: A Compliant Catching Mechanism for Mobile Manipulators via Combined Optimization and Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -49,21 +49,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">CushionCatch: A Compliant Catching Mechanism for Mobile Manipulators via Combined Optimization and Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">Bingjie Chen<sup>*</sup>,</span>
+                <span class="author-block">Keyu Fan<sup>*</sup>,</span>
+                <span class="author-block">Houde Liu</span>
+                <span class="author-block">Chongkun Xia</span>
+                <span class="author-block">Liang Han</span>
+                <span class="author-block">Kangkang Dong</span>
+                <span class="author-block">Bin Liang</span>
+              </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Institution Name<br>IROS 2025</span>
+<!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -78,17 +80,6 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -111,6 +102,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
+                      
             </div>
           </div>
         </div>
@@ -128,9 +120,6 @@
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
   </div>
 </section>
@@ -144,8 +133,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Catching heavy flying objects with a cushioning
+process is a skill commonly performed by humans, yet it
+remains a significant challenge for robots. In this paper, we
+present a framework that combines optimization and learn-
+ing to achieve compliant catching on mobile manipulators
+(CCMM). First, we propose a high-level capture planner for
+mobile manipulators (MM) that calculates the optimal capture
+point and joint configuration. Next, the pre-catching (PRC)
+planner ensures the robot reaches the target joint configuration
+as quickly as possible. To learn compliant catching strategies,
+we introduce a network that leverages the strengths of LSTM
+for capturing temporal dependencies and positional encoding
+for spatial context (P-LSTM). This network is designed to effec-
+tively learn compliant strategies from human demonstrations.
+Following this, the post-catching (POC) planner tracks the
+compliant sequence output by the P-LSTM while avoiding po-
+tential collisions due to structural differences between humans
+and robots. We validate the CCMM framework through both
+simulated and real-world ball-catching scenarios, achieving a
+success rate of 98.70% in simulation, 92.59% in real-world tests,
+and a 28.7% reduction in impact torques. The open source code
+will be released for the reference of the community.
         </div>
       </div>
     </div>
